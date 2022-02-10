@@ -3,8 +3,40 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-        <script src="./rps.js"></script>
+        <script src="./rps-gui.js"></script>
+        <link rel="stylesheet" href="./styles.css">
 	</head>
 	<body>
+        <div id="main">
+            <div id="header" class="container">
+                <h1>Rock. Paper. <em>Scissors!</em></h1>
+                <h3>The Game</h3>
+            </div>
+    
+            <div id="content" class="container">
+                <p id="announcment">Choose your weapon!</p>
+    
+                <div id="scoreboard">
+                    <p>You:&nbsp;</p>
+                    <p id="playerScore" class="score">0</p>
+                    <p>&nbsp;Me:&nbsp;</p>
+                    <p id="cpuScore" class="score">0</p>
+                </div>
+    
+                <div id="rpsSelector">
+                    <div id="rock">
+                        <button onclick="buttonClicked(1)" class="button">Rock!</button>
+                    </div>
+    
+                    <div id="paper">
+                        <button onclick="buttonClicked(2)" class="button">Paper!</button>
+                    </div>
+    
+                    <div id="scissors">
+                        <button onclick="buttonClicked(3)" class="button">Scissors!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</body>
 </html>
